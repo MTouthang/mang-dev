@@ -2,7 +2,7 @@ const Header = () => {
   return (
     <>
       <header className="px-10 py-5 ">
-        <nav className="flex items-center justify-between font-mono text-primary-light">
+        <nav className="flex items-center justify-between font-mono text-primary-dark">
           {/* <!-- nav logo --> */}
           <div className="bg-primary-light rounded-sm">
             <p className="bg-primary-bg  rounded-sm hover:-translate-y-1 hover:-translate-x-1 transition ease-in-out ">
@@ -12,22 +12,22 @@ const Header = () => {
 
           {/* <!-- nav menu items and button --> */}
           <div className="flex items-center gap-5 ">
-            <ol className=" gap-6 text-primary-dark hidden md:block md:flex">
+            <ol className=" gap-6 text-primary-dark hidden md:flex">
               <li>
                 <a href="#about" className="hover:text-primary-light">
-                  <span className="text-primary-light">01.</span> About{" "}
+                  About
                 </a>
               </li>
 
               <li>
                 <a href="#experience" className="hover:text-primary-light">
-                  <span className="text-primary-light">02.</span> Experience
+                  Experience
                 </a>
               </li>
 
               <li>
                 <a href="#projects" className="hover:text-primary-light">
-                  <span className="text-primary-light">03.</span> Projects
+                  Projects
                 </a>
               </li>
             </ol>

@@ -1,9 +1,12 @@
 import Layout from "./Layout/Layout";
+import HeroSection from "./Page/HeroSection";
 
 const Home = () => {
   return (
     <div>
-      <Layout>hello layout</Layout>
+      <Layout>
+        <HeroSection />
+      </Layout>
     </div>
   );
 };

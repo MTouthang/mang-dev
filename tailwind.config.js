@@ -6,9 +6,10 @@ export default {
       colors: {
         primary: {
           bg: "#131314",
-          light: "#64FFDA",
           default: "#0A192F",
           dark: "#CCD6F6",
+          light: "#D8D8D8",
+          darkText: "#444746",
         },
       },
     },
