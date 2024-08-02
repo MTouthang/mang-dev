@@ -23,11 +23,11 @@ const HeroSection = () => {
             from scratch, focusing on both frontend and backend aspects.
           </p>
           <div className="w-56 rounded hover:bg-primary-light">
-            <button className="w-56 px-10 py-3 font-mono transition ease-in-out border-2 rounded text-primary-default border-primary-light hover:-translate-y-1 hover:-translate-x-1 bg-primary-bg">
-              <a href={resume} target="blank">
+            <a href={resume} target="blank">
+              <button className="w-56 px-10 py-3 font-mono transition ease-in-out border-2 rounded text-primary-default border-primary-light hover:-translate-y-1 hover:-translate-x-1 bg-primary-bg">
                 Resume
-              </a>
-            </button>
+              </button>
+            </a>
           </div>
         </div>
 
