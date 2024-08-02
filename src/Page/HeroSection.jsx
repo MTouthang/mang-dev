@@ -1,37 +1,43 @@
+import resume from "../assets/my-resumev1.0.1.pdf";
+
 const HeroSection = () => {
   return (
     <div>
       <main className="h-[90vh] relative mx-auto flex items-center justify-center w-full xl:w-3/4">
         {/* <!-- hero main body --> */}
-        <div className="w-full px-4 md:w-2/3 mx-auto">
-          <p className="text-[#64FFDA] font-medium font-mono">Hi, my name is</p>
+        <div className="w-full px-4 mx-auto md:w-2/3">
+          <p className="font-mono font-medium text-primary-light">
+            Hi, my name is
+          </p>
           <h1 className="font-extrabold leading-[65px] text-5xl text-[#CCD6F6] font-sans">
             Ngamlenmang Touthang
             <br />
-            <span className="text-[#8892B0]">
-              {" "}
-              I build things for the web.{" "}
+            <span className="text-primary-darkText">
+              I build things for the web.
             </span>
           </h1>
-          <p className="py-8 text-xl text-[#8892B0]">
-            Im a software engineer specializing in building (and occasionally
-            designing) exceptional digital experiences. Currently, Im focused on
-            building accessible, human-centered products at PW skills.
+          <p className="py-8 text-xl text-primary-default">
+            Im a associate developer at Physics Wallah, specializing in crafting
+            web applications. I create content, documentation, and develop web
+            projects for enthusiasts interested in building web applications
+            from scratch, focusing on both frontend and backend aspects.
           </p>
-          <div className="hover:bg-[#64FFDA] w-56 rounded">
-            <button className="px-10 py-3 border-2 rounded text-[#64FFDA] border-[#64FFDA] hover:-translate-y-1 hover:-translate-x-1 bg-[#0A192F] transition ease-in-out w-56 font-mono">
-              Download Resume
+          <div className="w-56 rounded hover:bg-primary-light">
+            <button className="w-56 px-10 py-3 font-mono transition ease-in-out border-2 rounded text-primary-default border-primary-light hover:-translate-y-1 hover:-translate-x-1 bg-primary-bg">
+              <a href={resume} target="blank">
+                Resume
+              </a>
             </button>
           </div>
         </div>
 
         {/* <!-- hero main left --> */}
-        <div className="hidden md:block md:bottom-0 md:flex flex-col flex-wrap items-center justify-end gap-8 md:left-10 text-[#8892B0] fixed">
+        <div className="fixed flex-col flex-wrap items-center justify-end hidden gap-8 md:bottom-0 md:flex md:left-10 text-primary-default">
           {/* <!-- hero social link --> */}
           <div className="flex flex-col gap-5">
             <a
               href="#git"
-              className="hover:text-[#64FFDA] hover:-translate-y-1 transition ease-linear"
+              className="transition ease-linear hover:text-primary-blade hover:-translate-y-1"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +57,7 @@ const HeroSection = () => {
 
             <a
               href="#insta"
-              className="hover:text-[#64FFDA] hover:-translate-y-1 transition ease-linear"
+              className="transition ease-linear hover:text-primary-blade hover:-translate-y-1"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +79,7 @@ const HeroSection = () => {
 
             <a
               href="#twitter"
-              className="hover:text-[#64FFDA] hover:-translate-y-1 transition ease-linear"
+              className="transition ease-linear hover:text-primary-blade hover:-translate-y-1"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -93,7 +99,7 @@ const HeroSection = () => {
 
             <a
               href="#linkedin"
-              className="hover:text-[#64FFDA] hover:-translate-y-1 transition ease-linear"
+              className="transition ease-linear hover:text-primary-blade hover:-translate-y-1"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -115,7 +121,7 @@ const HeroSection = () => {
 
             <a
               href="#codepen"
-              className="hover:text-[#64FFDA] hover:-translate-y-1 transition ease-linear"
+              className="transition ease-linear hover:text-primary-blade hover:-translate-y-1"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -141,12 +147,12 @@ const HeroSection = () => {
         </div>
 
         {/* <!-- hero main right --> */}
-        <div className="hidden md:block md:fixed md:bottom-0 md:flex flex-col items-center justify-end md:right-2 gap-32">
+        <div className="flex-col items-center justify-end hidden gap-32 md:fixed md:bottom-0 md:flex md:-right-1">
           <a
             href="mailto:johndoe@gmail.com"
-            className="w-24 rotate-90 text-[#8892B0] hover:text-[#64FFDA] hover:-translate-y-2 transition ease-linear"
+            className="w-40 transition ease-linear rotate-90 text-primary-default hover:text-primary-blade hover:-translate-y-2"
           >
-            johndoe@gmail.com
+            ngtouthang96@gmail.com
           </a>
           <div className="w-[0.5px] h-32 bg-white"></div>
         </div>
