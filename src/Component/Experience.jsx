@@ -1,6 +1,9 @@
 const Experience = () => {
   return (
-    <section className="pl-5 pr-5 mx-auto md:w-2/3 md:py-20 md:pr-0 md:pl-0">
+    <section
+      id="experience"
+      className="pl-5 pr-5 mx-auto md:w-2/3 md:py-20 md:pr-0 md:pl-0"
+    >
       <div className="flex items-center justify-start gap-10 pb-10">
         <h2 className="text-2xl md:text-4xl font-extrabold text-[#ccd6f6] font-mono">
           02. Where I've Worked
