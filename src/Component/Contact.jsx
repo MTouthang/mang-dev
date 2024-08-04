@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <section>
+    <section id="contact">
       <div className="space-y-5 text-center">
         <p className="text-xl text-[#64FFDA]">04. What's Next</p>
         <h2 className="text-3xl md:text-4xl font-extrabold text-[#ccd6f6] font-mono">

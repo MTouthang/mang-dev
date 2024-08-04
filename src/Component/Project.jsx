@@ -1,7 +1,7 @@
 const Project = () => {
   return (
     // <!-- Projects -->
-    <section className="w-3/4 py-10 mx-auto md:py-20">
+    <section id="project" className="w-3/4 py-10 mx-auto md:py-20">
       <div className="text-center">
         <h2 className="text-2xl md:text-4xl font-extrabold text-[#ccd6f6] font-mono">
           Other Noteworthy Projects
