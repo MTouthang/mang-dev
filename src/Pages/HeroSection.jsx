@@ -17,10 +17,11 @@ const HeroSection = () => {
             </span>
           </h1>
           <p className="py-8 text-xl text-primary-default">
-            Im a associate developer at Physics Wallah, specializing in crafting
-            web applications. I create content, documentation, and develop web
-            projects for enthusiasts interested in building web applications
-            from scratch, focusing on both frontend and backend aspects.
+            I am an Associate (Full Stack Developer) at Physics Wallah,
+            specializing in creating web applications. I develop content,
+            documentation, and web projects for enthusiasts interested in
+            building web applications from scratch, focusing on both frontend
+            and backend development.
           </p>
           <div className="w-56 rounded hover:bg-primary-light">
             <a href={resume} target="blank">

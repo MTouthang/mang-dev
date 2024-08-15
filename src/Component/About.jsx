@@ -16,26 +16,31 @@ const About = () => {
       <div className="flex flex-wrap justify-between gap-16 lg:flex-nowrap">
         <div className="text-[#8892B0] md:w-3/4 w-full">
           <p className="md:text-xl">
-            I'm a passionate frontend developer, dedicated to crafting engaging
-            and user-centric web experiences. While I have a good understanding
-            of backend development, my true passion lies in creating captivating
-            frontend interfaces. My journey in the world of web development has
-            equipped me with a robust skill set in JavaScript, React.js,
-            Next.js, and TypeScriptJS.
+            I am deeply passionate about full-stack web development, with a
+            particular enthusiasm for crafting immersive and user-centric web
+            experiences. While I am committed to the entire spectrum of web
+            development, my true passion shines through in the design and
+            creation of captivating frontend interfaces that enhance user
+            engagement and satisfaction.
           </p>
 
           <p className="mt-5 text-xl">
             Here a few technologies I've been working with recently:
           </p>
           <div className="flex justify-around mt-2">
-            <ul className="list-image-[url(./listIcon.png)]">
+            <ul className="list-image-[url('../assets/list-style-icon.png')]">
+              <li>HTML5</li>
+              <li>CSS3</li>
               <li>JavaScript (ES6+)</li>
               <li>React</li>
               <li>Node.js</li>
-            </ul>
-            <ul className="list-image-[url(./listIcon.png)]">
               <li>Typescript</li>
+            </ul>
+            <ul className="list-image-[url(../assets/listIcon.png)]">
               <li>Tailwind</li>
+              <li>Mongoose</li>
+              <li>Express</li>
+              <li>MongoDB</li>
               <li>Nextjs</li>
             </ul>
           </div>
