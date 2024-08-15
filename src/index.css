@@ -3,5 +3,10 @@
 @tailwind utilities;
 
 html {
-    scroll-behavior: smooth;
+    background-color: #131314;
+}
+
+body {
+    max-width: 1440px;
+    margin: auto;
 }
