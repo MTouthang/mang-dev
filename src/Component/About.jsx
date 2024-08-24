@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="py-20 pl-5 pr-5 mx-auto md:pr-0 md:pl-0 md:w-2/3"
+      className="py-20 pl-5 pr-5 mx-auto animated md:pr-0 md:pl-0 md:w-2/3"
     >
       <div className="flex items-center justify-start gap-10 pb-10">
         <h2 className="text-2xl font-extrabold text-[#ccd6f6] font-mono w-full">
