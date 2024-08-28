@@ -55,10 +55,13 @@ const Experience = () => {
             </p>
           </div>
 
-          <ul className="list-image-[url(./listIcon.png)] md:text-xl">
+          <ul className="md:text-xl">
             {data?.description.map((item, index) => {
               return (
-                <li className="pb-4 pl-1" key={index}>
+                <li
+                  className="pl-8 mb-4 bg-left bg-no-repeat bg-list-icon"
+                  key={index}
+                >
                   {item}
                 </li>
               );

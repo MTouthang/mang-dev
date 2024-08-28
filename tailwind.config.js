@@ -13,6 +13,9 @@ export default {
           blade: "#64FFDA",
         },
       },
+      backgroundImage: {
+        "list-icon": "url('./src/assets/listIcon.png')",
+      },
     },
   },
   plugins: [],

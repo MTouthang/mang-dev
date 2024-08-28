@@ -8,7 +8,6 @@ const Header = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = document.documentElement.scrollTop;
-      console.log(scrollTop);
 
       if (scrollTop > lastScrollTop) {
         // Scrolling down
