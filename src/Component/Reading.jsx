@@ -110,11 +110,11 @@ const Reading = () => {
           </div>
         </div>
       </div>
-      <div className="hover:bg-[#64FFDA] w-44 rounded mx-auto my-10">
+      {/* <div className="hover:bg-[#64FFDA] w-44 rounded mx-auto my-10">
         <button className="px-10 py-3 border-2 rounded text-[#64FFDA] border-[#64FFDA] hover:-translate-y-1 hover:-translate-x-1 bg-[#0A192F] transition ease-in-out w-44 font-mono">
           Show more
         </button>
-      </div>
+      </div> */}
     </section>
   );
 };

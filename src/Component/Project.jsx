@@ -2,7 +2,7 @@ import me from "../../src/assets/image.png";
 const Project = () => {
   return (
     // <!-- Projects -->
-    <section id="project" className="w-3/4 py-10 mx-auto md:py-20 ">
+    <section id="project" className="w-3/4 py-5 mx-auto md:py-5 ">
       <div className="flex items-center justify-between gap-10 pb-10">
         <h2 className="text-2xl font-extrabold text-[#ccd6f6] font-mono w-full">
           03. Projects
@@ -110,11 +110,11 @@ const Project = () => {
           </div>
         </div>
       </div>
-      <div className="hover:bg-[#64FFDA] w-44 rounded mx-auto my-10">
+      {/* <div className="hover:bg-[#64FFDA] w-44 rounded mx-auto my-10">
         <button className="px-10 py-3 border-2 rounded text-[#64FFDA] border-[#64FFDA] hover:-translate-y-1 hover:-translate-x-1 bg-[#0A192F] transition ease-in-out w-44 font-mono">
           Show more
         </button>
-      </div>
+      </div> */}
     </section>
   );
 };
