@@ -22,7 +22,7 @@ const Experience = () => {
       className="pl-5 pr-5 mx-auto md:w-2/3 md:py-20 md:pr-0 md:pl-0"
     >
       <div className="flex items-center justify-between gap-10 pb-10">
-        <h2 className="text-2xl md:text-4xl font-extrabold text-[#ccd6f6] font-mono">
+        <h2 className="text-2xl font-extrabold text-[#ccd6f6] font-mono w-full">
           02. Where I&apos;ve Worked
         </h2>
         <div className="w-20 md:w-60 h-[0.5px] bg-[#8892b0]"></div>

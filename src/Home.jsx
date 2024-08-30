@@ -2,7 +2,8 @@ import About from "./Component/About";
 import Contact from "./Component/Contact";
 import Experience from "./Component/Experience";
 import Project from "./Component/Project";
-import Works from "./Component/Works";
+import Reading from "./Component/Reading";
+// import Works from "./Component/Works";
 import Layout from "./Layout/Layout";
 import HeroSection from "./Pages/HeroSection";
 
@@ -13,8 +14,10 @@ const Home = () => {
         <HeroSection />
         <About />
         <Experience />
-        <Works />
+        {/* <Works /> */}
+
         <Project />
+        <Reading />
         <Contact />
       </Layout>
     </div>

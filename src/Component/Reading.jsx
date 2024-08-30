@@ -1,11 +1,11 @@
 import me from "../../src/assets/image.png";
-const Project = () => {
+const Reading = () => {
   return (
     // <!-- Projects -->
     <section id="project" className="w-3/4 py-10 mx-auto md:py-20 ">
       <div className="flex items-center justify-between gap-10 pb-10">
         <h2 className="text-2xl font-extrabold text-[#ccd6f6] font-mono w-full">
-          03. Projects
+          04. Readings
         </h2>
         <div className="w-20 md:w-60 h-[0.5px] bg-[#8892b0]"></div>
       </div>
@@ -119,4 +119,4 @@ const Project = () => {
   );
 };
 
-export default Project;
+export default Reading;
