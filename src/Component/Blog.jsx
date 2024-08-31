@@ -1,10 +1,10 @@
 import me from "../../src/assets/image.png";
-const Reading = () => {
+const Blog = () => {
   return (
-    <section id="reading" className="w-3/4 py-10 mx-auto md:py-20 ">
+    <section id="blog" className="w-3/4 py-10 mx-auto md:py-20 ">
       <div className="flex items-center justify-between gap-10 pb-10">
         <h2 className="text-2xl font-extrabold text-[#ccd6f6] font-mono w-full">
-          04. Readings
+          05. Blogs
         </h2>
         <div className="w-20 md:w-60 h-[0.5px] bg-[#8892b0]"></div>
       </div>
@@ -118,4 +118,4 @@ const Reading = () => {
   );
 };
 
-export default Reading;
+export default Blog;

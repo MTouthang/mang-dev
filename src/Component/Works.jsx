@@ -1,9 +1,6 @@
 const Works = () => {
   return (
-    <section
-      id="work"
-      className="pt-10 pl-5 pr-5 mx-auto md:pt-0 md:py-20 md:w-2/3 md:pl-0 md:pr-0"
-    >
+    <section className="pt-10 pl-5 pr-5 mx-auto md:pt-0 md:py-20 md:w-2/3 md:pl-0 md:pr-0">
       <div className="flex items-center justify-start gap-10 pb-14">
         <h2 className="text-2xl md:text-4xl font-extrabold text-[#ccd6f6] font-mono">
           03. Some Things I&apos;ve Build

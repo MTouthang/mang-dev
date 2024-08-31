@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 
 const Header = () => {
   const [scrollDirection, setScrollDirection] = useState(null);
@@ -26,6 +25,13 @@ const Header = () => {
     };
   }, [lastScrollTop]);
 
+  const scrollTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <>
       <header
@@ -33,37 +39,65 @@ const Header = () => {
           scrollDirection === "down" ? "-translate-y-full" : "translate-y-0"
         } backdrop-blur-sm transition ease-in shadow-lg`}
       >
-        <nav className="flex items-center justify-between font-mono text-primary-default">
+        <nav className="flex items-center justify-between text-primary-default">
           {/* <!-- nav logo --> */}
-          <div className="rounded-sm bg-primary-light">
-            <p className="transition ease-in-out rounded-sm bg-primary-bg hover:-translate-y-1 hover:-translate-x-1 ">
-              <Link to={"/"}> {`<Mang.dev/>`}</Link>
+          <div className="rounded-sm bg-primary-textHightLight">
+            <p
+              className="px-1 transition ease-in-out border rounded-sm border-primary-textHightLight bg-primary-bg hover:-translate-y-1 hover:-translate-x-1 hover:text-primary-textHightLight"
+              onClick={scrollTop}
+            >
+              {`<mang.dev/>`}
             </p>
           </div>
 
           {/* <!-- nav menu items and button --> */}
-          <div className="flex items-center gap-5 ">
+          <div className="flex items-center gap-5 text-sm ">
             <ol className="hidden gap-6 text-primary-default md:flex">
               <li>
-                <a href="#about" className="hover:text-primary-darkText">
+                <a
+                  href="#about"
+                  className="hover:text-primary-textHightLight hover:underline underline-offset-4"
+                >
                   About
                 </a>
               </li>
 
               <li>
-                <a href="#work" className="hover:text-primary-darkText">
+                <a
+                  href="#experience"
+                  className="hover:text-primary-textHightLight hover:underline underline-offset-4"
+                >
                   Works
                 </a>
               </li>
 
               <li>
-                <a href="#project" className="hover:text-primary-darkText">
+                <a
+                  href="#project"
+                  className="hover:text-primary-textHightLight hover:underline underline-offset-4"
+                >
                   Projects
                 </a>
               </li>
+              <li>
+                <a
+                  href="#reading"
+                  className="hover:text-primary-textHightLight hover:underline underline-offset-4"
+                >
+                  Readings
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#reading"
+                  className="hover:text-primary-textHightLight hover:underline underline-offset-4"
+                >
+                  blogs
+                </a>
+              </li>
             </ol>
-            <div className="rounded bg-primary-light">
-              <button className="px-4 py-1 font-mono transition ease-in-out border-2 rounded text-primary-default border-primary-light hover:-translate-y-1 hover:-translate-x-1 bg-primary-bg">
+            <div className="rounded bg-primary-textHightLight">
+              <button className="px-4 py-1 transition ease-in-out border rounded hover:text-primary-textHightLight text-primary-default border-primary-textHightLight hover:-translate-y-1 hover:-translate-x-1 bg-primary-bg">
                 <a href="#contact"> Contact </a>
               </button>
             </div>
