@@ -12,6 +12,8 @@ export default {
           light: "#D8D8D8",
           darkText: "#444746",
           blade: "#64FFDA",
+          textLight: "#FFFFFF",
+          textDimmed: "#898B8D",
         },
       },
       backgroundImage: {

@@ -5,27 +5,26 @@ const HeroSection = () => {
     <div>
       <main className="h-[90vh] relative mx-auto flex items-center justify-center w-full xl:w-3/4">
         {/* <!-- hero main body --> */}
-        <div className="w-full px-4 mx-auto md:w-2/3">
-          <p className="font-mono font-medium text-primary-light">
+        <div className="w-full px-3 mx-auto md:px-2 md:w-2/3">
+          <p className="font-mono font-medium text-primary-textDimmed">
             Hi, my name is
           </p>
-          <h1 className="font-extrabold leading-[65px] text-5xl text-[#CCD6F6] font-sans">
+          <h1 className="font-extrabold leading-[65px] text-5xl font-sans text-primary-textLight">
             Ngamlenmang Touthang
-            <br />
-            <span className="text-primary-darkText">
-              I build things for the web.
-            </span>
           </h1>
-          <p className="py-8 text-xl text-primary-default">
+          <h1 className="text-3xl font-semibold lg:text-4xl md:text-3xl text-primary-textHightLight typing">
+            I build things for the Web.
+          </h1>
+          <p className="py-8 text-md text-primary-default">
             I am an Associate (Full Stack Developer) at Physics Wallah,
             specializing in creating web applications. I develop content,
             documentation, and web projects for enthusiasts interested in
             building web applications from scratch, focusing on both frontend
             and backend development.
           </p>
-          <div className="w-56 rounded hover:bg-primary-light">
+          <div className="w-56 rounded hover:bg-primary-textHightLight">
             <a href={resume} target="blank">
-              <button className="w-56 px-10 py-3 font-mono transition ease-in-out border-2 rounded text-primary-default border-primary-light hover:-translate-y-1 hover:-translate-x-1 bg-primary-bg">
+              <button className="w-56 px-10 py-3 transition ease-in-out border-2 rounded text-primary-default border-primary-textHightLight hover:-translate-y-1 hover:-translate-x-1 bg-primary-bg hover:text-primary-textHightLight">
                 Resume
               </button>
             </a>
@@ -37,8 +36,10 @@ const HeroSection = () => {
           {/* <!-- hero social link --> */}
           <div className="flex flex-col gap-5">
             <a
-              href="#git"
-              className="transition ease-linear hover:text-primary-blade hover:-translate-y-1"
+              href="https://github.com/MTouthang"
+              target="_blank"
+              title="Github"
+              className="transition ease-linear hover:text-primary-textHightLight hover:-translate-y-1"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -57,8 +58,10 @@ const HeroSection = () => {
             </a>
 
             <a
-              href="#insta"
-              className="transition ease-linear hover:text-primary-blade hover:-translate-y-1"
+              href="https://www.instagram.com/ngamlenmang_touthang/?hl=en"
+              target="__blank"
+              className="transition ease-linear hover:text-primary-textHightLight hover:-translate-y-1"
+              title="Instagram"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -79,8 +82,9 @@ const HeroSection = () => {
             </a>
 
             <a
-              href="#twitter"
-              className="transition ease-linear hover:text-primary-blade hover:-translate-y-1"
+              href="https://x.com/ngtouthang"
+              target="_blank"
+              className="transition ease-linear hover:text-primary-textHightLight hover:-translate-y-1"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -99,8 +103,10 @@ const HeroSection = () => {
             </a>
 
             <a
-              href="#linkedin"
-              className="transition ease-linear hover:text-primary-blade hover:-translate-y-1"
+              href="https://www.linkedin.com/in/ngamlenmangtouthang/"
+              target="_blank"
+              title="LinkedIN"
+              className="transition ease-linear hover:text-primary-textHightLight hover:-translate-y-1"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -121,8 +127,10 @@ const HeroSection = () => {
             </a>
 
             <a
-              href="#codepen"
-              className="transition ease-linear hover:text-primary-blade hover:-translate-y-1"
+              href="https://hashnode.com/@ngtouthang"
+              target="_blank"
+              title="hashnode"
+              className="transition ease-linear hover:text-primary-textHightLight hover:-translate-y-1"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -135,7 +143,6 @@ const HeroSection = () => {
                 strokeLinejoin="round"
                 className="w-6 h-6"
               >
-                <title>CodePen</title>
                 <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon>
                 <line x1="12" y1="22" x2="12" y2="15.5"></line>
                 <polyline points="22 8.5 12 15.5 2 8.5"></polyline>
@@ -151,7 +158,7 @@ const HeroSection = () => {
         <div className="flex-col items-center justify-end hidden gap-32 md:fixed md:bottom-0 md:flex md:-right-1">
           <a
             href="mailto:johndoe@gmail.com"
-            className="w-40 transition ease-linear rotate-90 text-primary-default hover:text-primary-blade hover:-translate-y-2"
+            className="w-40 transition ease-linear rotate-90 text-primary-default hover:text-primary-textHightLight hover:-translate-y-2"
           >
             ngtouthang96@gmail.com
           </a>
