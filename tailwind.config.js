@@ -19,9 +19,6 @@ export default {
       listStyleImage: {
         triangle: 'url("./src/assets/list-icon.png")',
       },
-      backgroundImage: {
-        "list-icon": "url('./src/assets/listIcon.png')",
-      },
     },
   },
   plugins: [],

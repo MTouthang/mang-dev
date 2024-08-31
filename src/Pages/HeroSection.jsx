@@ -151,18 +151,18 @@ const HeroSection = () => {
               </svg>
             </a>
           </div>
-          <div className="w-[0.5px] bg-white h-32"></div>
+          <div className="w-[0.5px] bg-primary-textHightLight h-32"></div>
         </div>
 
         {/* <!-- hero main right --> */}
-        <div className="flex-col items-center justify-end hidden gap-32 md:fixed md:bottom-0 md:flex md:-right-1">
+        <div className="flex-col items-center justify-end hidden gap-40 md:fixed md:bottom-0 md:flex md:-right-1">
           <a
             href="mailto:johndoe@gmail.com"
             className="w-40 transition ease-linear rotate-90 text-primary-default hover:text-primary-textHightLight hover:-translate-y-2"
           >
             ngtouthang96@gmail.com
           </a>
-          <div className="w-[0.5px] h-32 bg-white"></div>
+          <div className="w-[0.5px] h-32 bg-primary-textHightLight"></div>
         </div>
       </main>
     </div>
