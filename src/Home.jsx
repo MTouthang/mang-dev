@@ -1,4 +1,5 @@
 import About from "./Component/About";
+import Blog from "./Component/Blog";
 import Contact from "./Component/Contact";
 import Experience from "./Component/Experience";
 import Project from "./Component/Project";
@@ -18,6 +19,7 @@ const Home = () => {
 
         <Project />
         <Reading />
+        <Blog />
         <Contact />
       </Layout>
     </div>

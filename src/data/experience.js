@@ -26,3 +26,13 @@ export const experiences = [
     ],
   },
 ];
+
+// project data -
+export const projects = [
+  {
+    title: "string",
+    description: "description",
+    live: "demo",
+    source: "github",
+  },
+];

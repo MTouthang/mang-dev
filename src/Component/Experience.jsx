@@ -29,7 +29,7 @@ const Experience = () => {
       </div>
 
       <div className="flex flex-col justify-between gap-5 text-primary-light md:flex-row ">
-        <div className="flex md:flex-col flex-row items-center w-[300px] justify-start  border-l-[0.1px] border-primary-textHightLight text-center text-md">
+        <div className="flex md:flex-col flex-row items-center w-[300px] justify-start text-center text-md">
           <p
             className={`w-full text-primary-textLight  cursor-pointer h-16 flex justify-center items-center ${active === 0 ? "bg-primary-textHightLight border-l-[0.5px]" : ""}`}
             onClick={handleFirstCompany}
