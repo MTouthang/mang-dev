@@ -16,6 +16,9 @@ export default {
           textDimmed: "#898B8D",
         },
       },
+      listStyleImage: {
+        triangle: 'url("./src/assets/list-icon.png")',
+      },
       backgroundImage: {
         "list-icon": "url('./src/assets/listIcon.png')",
       },
