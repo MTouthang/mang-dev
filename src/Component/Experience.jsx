@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { experiences } from "../data/experience";
+import { experiences } from "../data/data";
 
 const Experience = () => {
   const [data, setData] = useState(experiences[0]);
