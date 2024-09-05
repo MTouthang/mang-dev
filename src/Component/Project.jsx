@@ -1,4 +1,5 @@
-import me from "../../src/assets/image.png";
+import projectImage from "../assets/projects-default.jpg";
+import { projects } from "../data/data";
 const Project = () => {
   return (
     // <!-- Projects -->
@@ -10,99 +11,54 @@ const Project = () => {
         <div className="w-20 md:w-60 h-[0.5px] bg-primary-textHightLight mr-4"></div>
       </div>
       <div className="flex flex-wrap justify-center gap-2">
-        <div className="rounded h-80 w-56 bg-[#262626] hover:bg-[#2c2c2c]">
-          <div className="w-full h-40 border-red-400">
-            <img
-              src={me}
-              alt="me"
-              className="object-cover w-full h-full rounded-t-sm"
-            />
-          </div>
-          <div className="p-1 text-[#D0D0D0]">
-            <h3 className="py-1 font-semibold"> The title </h3>
-            <p className="py-1 text-xs">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Temporibus animi culpa corporis
-            </p>
-            <p className="text-sm"> link1 </p>
-            <p className="text-sm"> link2</p>
-          </div>
-        </div>
+        {projects.map((item, index) => {
+          return (
+            <div
+              className="rounded h-80 w-56 bg-[#262626] hover:bg-[#2c2c2c] group"
+              key={index}
+            >
+              <div className="w-full h-40 overflow-hidden border-red-400">
+                <img
+                  src={item.image ? item.image : projectImage}
+                  alt={item.title}
+                  className="object-cover w-full h-full transition rounded-t-sm group-hover:scale-125"
+                />
+              </div>
+              <div className="p-1 text-[#D0D0D0] group-hover:text-primary-textHightLight">
+                <h3 className="py-2 font-semibold line-clamp-1">
+                  {item.title}
+                </h3>
+                <p className="py-1 text-xs">
+                  {item?.description?.slice(0, 95)}
+                  {item.description ? "..." : ""}
+                </p>
+                {item.live ? (
+                  <a
+                    className="mr-5 text-sm transition hover:underline"
+                    href={item.live}
+                    target="__blank"
+                  >
+                    Live
+                  </a>
+                ) : (
+                  ""
+                )}
 
-        <div className="rounded h-80 w-56 bg-[#262626] hover:bg-[#2c2c2c]">
-          <div className="w-full h-40 overflow-hidden rounded">
-            <img
-              src="https://camo.githubusercontent.com/769fba34ffe5b2bff31b215523b9fe432bb749cef90834494f248a4b8acf00a7/68747470733a2f2f6d65646961302e67697068792e636f6d2f6d656469612f61364b6e66304c67734c31724649437371552f67697068792e6769663f6369643d373930623736313137613835303066313033653331333966306566613432376162313636313564363162633837343338267269643d67697068792e6769662663743d67"
-              alt="me"
-              className="object-cover w-full h-full transition rounded-t-sm hover:scale-125"
-            />
-          </div>
-          <div className="p-1 text-[#D0D0D0]">
-            <h3 className="py-1 font-semibold"> Note keeping App </h3>
-            <p className="py-1 text-xs">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Temporibus animi culpa corporis
-            </p>
-            <p className="text-sm"> link1 </p>
-            <p className="text-sm"> link2</p>
-          </div>
-        </div>
-
-        <div className="rounded h-80 w-56 bg-[#262626] hover:bg-[#2c2c2c]">
-          <div className="w-full h-40 ">
-            <img
-              src={me}
-              alt="me"
-              className="object-cover w-full h-full rounded-t-sm"
-            />
-          </div>
-          <div className="p-1 text-[#D0D0D0]">
-            <h3 className="py-1 font-semibold"> The title </h3>
-            <p className="py-1 text-xs">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Temporibus animi culpa corporis
-            </p>
-            <p className="text-sm"> link1 </p>
-            <p className="text-sm"> link2</p>
-          </div>
-        </div>
-        <div className="rounded h-80 w-56 bg-[#262626] hover:bg-[#2c2c2c]">
-          <div className="w-full h-40 ">
-            <img
-              src={me}
-              alt="me"
-              className="object-cover w-full h-full rounded-t-sm"
-            />
-          </div>
-          <div className="p-1 text-[#D0D0D0]">
-            <h3 className="py-1 font-semibold"> The title </h3>
-            <p className="py-1 text-xs">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Temporibus animi culpa corporis
-            </p>
-            <p className="text-sm"> link1 </p>
-            <p className="text-sm"> link2</p>
-          </div>
-        </div>
-
-        <div className="rounded h-80 w-56 bg-[#262626] hover:bg-[#2c2c2c]">
-          <div className="w-full h-40 ">
-            <img
-              src={me}
-              alt="me"
-              className="object-cover w-full h-full rounded-t-sm"
-            />
-          </div>
-          <div className="p-1 text-[#D0D0D0]">
-            <h3 className="py-1 font-semibold"> The title </h3>
-            <p className="py-1 text-xs">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Temporibus animi culpa corporis
-            </p>
-            <p className="text-sm"> link1 </p>
-            <p className="text-sm"> link2</p>
-          </div>
-        </div>
+                {item.source ? (
+                  <a
+                    className="text-sm transition hover:underline"
+                    href={item.source}
+                    target="__blank"
+                  >
+                    Code
+                  </a>
+                ) : (
+                  ""
+                )}
+              </div>
+            </div>
+          );
+        })}
       </div>
       {/* <div className="hover:bg-[#64FFDA] w-44 rounded mx-auto my-10">
         <button className="px-10 py-3 border-2 rounded text-[#64FFDA] border-[#64FFDA] hover:-translate-y-1 hover:-translate-x-1 bg-[#0A192F] transition ease-in-out w-44 font-mono">
