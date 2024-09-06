@@ -112,7 +112,8 @@ export const projects = [
     id: 9,
     title: "Weather App",
     image: null,
-    description: " ",
+    description:
+      "A weather app built with React fetches real-time weather data via APIs, using components for the UI such as location input and weather display. It updates dynamically based on user input and offers features like temperature conversion and weather icons within a responsive interface.",
     live: "",
     source: "",
   },
@@ -120,7 +121,8 @@ export const projects = [
     id: 10,
     title: "Hex Color Generator",
     image: null,
-    description: null,
+    description:
+      "A Hex Color Generator creates random hex color codes and displays them on the screen, changing the color with each button click.",
     live: null,
     source: null,
   },
