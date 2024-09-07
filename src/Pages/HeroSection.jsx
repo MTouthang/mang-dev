@@ -1,4 +1,4 @@
-import resume from "../assets/my-resumev1.0.1.pdf";
+import resume from "../assets/my-resumev1.2.0.pdf";
 
 const HeroSection = () => {
   return (
