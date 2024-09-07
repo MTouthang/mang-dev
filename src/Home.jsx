@@ -18,8 +18,8 @@ const Home = () => {
         {/* <Works /> */}
 
         <Project />
-        <Reading />
-        <Blog />
+        {/* <Reading /> */}
+        {/* <Blog /> */}
         <Contact />
       </Layout>
     </div>

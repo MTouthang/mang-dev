@@ -64,15 +64,16 @@ export const projects = [
     id: 4,
     title: "LMS",
     image: null,
-    description: null,
+    description:
+      "A Backend Learning Management System (LMS) built with Node.js manages user authentication, course creation, and communication between users. It provides APIs for course management, file handling, and integrates with third-party services like payment gateways. It's scalable, flexible, and designed to support educational platforms efficiently",
     live: null,
-    source: null,
+    source: "https://github.com/MTouthang/lms/",
   },
   {
     id: 5,
     title: "The Orion Academy",
     image:
-      "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZHM4cnFicDFibXd6dmVjNHlxaDh6MnJjbnIzaTZhcGNta3E3MXU5bCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/FGHaAxHO3d0qQlDZLW/giphy.webp",
+      "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExaGdwd29kczIyemlvdXNwaTRreWdzbHllamZ1NThtM3Z4Z2FiNXZnYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/FGHaAxHO3d0qQlDZLW/giphy.gif",
     description:
       "The Orion Academy School Website project is a responsive platform built with React.js to showcase school information, including academics, admissions, events, and resources for students and parents.",
     live: "https://orian-school-of-arts-science.netlify.app/",
@@ -92,7 +93,7 @@ export const projects = [
     id: 7,
     title: "Pokemon Card",
     image:
-      "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExajg2YTFpMWh3bGJka3Bwb2FjanRmcndjOWhzbTY4ZWtxY3c4NWtzYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/OzJMbbNptfFdw7AjE2/giphy.webp",
+      "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmhnM3BwZnZrbzQ4YWFlbng1bmNpenN4bm9hY2V5ejNwYm0wd3RmMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/TppdZxaXZOHDAOYGzs/giphy.gif",
     description:
       "The Pokemon API Project generates and displays details of a random Pokémon each time a button is clicked, using a Pokémon API to fetch and show data dynamically.",
     live: "https://mellifluous-kringle-d34e4b.netlify.app/",
@@ -111,11 +112,12 @@ export const projects = [
   {
     id: 9,
     title: "Weather App",
-    image: null,
+    image:
+      "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExdWJ4Z3B1NnJtMW1zY2NlcnFrc2xsN2swdHA3dWY0aWwyejhreDV0MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8Zes4m6sUgqnFodjgU/giphy.gif",
     description:
       "A weather app built with React fetches real-time weather data via APIs, using components for the UI such as location input and weather display. It updates dynamically based on user input and offers features like temperature conversion and weather icons within a responsive interface.",
-    live: "",
-    source: "",
+    live: "https://openmapweatherapi.netlify.app/",
+    source: "https://github.com/MTouthang/weatherapplication",
   },
   {
     id: 10,
@@ -123,8 +125,9 @@ export const projects = [
     image: null,
     description:
       "A Hex Color Generator creates random hex color codes and displays them on the screen, changing the color with each button click.",
-    live: null,
-    source: null,
+    live: "https://hexacolor101.netlify.app/",
+    source:
+      "https://github.com/sigma-webdev/Javascripts/tree/main/hex-color-guessing-game",
   },
 
   {
@@ -132,7 +135,7 @@ export const projects = [
     title: "Paytm clone",
     image: null,
     description:
-      "A simple webpage clone of Paytm built with HTML and Tailwind CSS ",
+      "A simple webpage clone of Paytm built with HTML and Tailwind CSS",
     live: "https://ecomclone101.netlify.app/",
     source:
       "https://github.com/MTouthang/tailwind-project/tree/main/paytm-clone",
@@ -143,8 +146,8 @@ export const projects = [
     image: null,
     description:
       "A simple webpage clone of Shopify built with html and Tailwind CSS",
-    live: null,
-    source: null,
+    live: "https://shopify101clone.netlify.app/",
+    source: "https://github.com/MTouthang/shopify-clone",
   },
   {
     id: 13,
@@ -172,8 +175,8 @@ export const projects = [
     image: null,
     description:
       "A simple webpage clone of Shopify built with html and Tailwind CSS",
-    live: null,
-    source: null,
+    live: "https://comwithapidemo.netlify.app/",
+    source: "https://github.com/MTouthang/demo-company-api",
   },
   {
     id: 16,
@@ -181,8 +184,8 @@ export const projects = [
     image: null,
     description:
       "A simple webpage clone of Shopify built with html and Tailwind CSS",
-    live: null,
-    source: null,
+    live: "https://hosterator101.netlify.app/",
+    source: "https://github.com/MTouthang/hosting-demo-web-application",
   },
   {
     id: 17,
@@ -190,8 +193,8 @@ export const projects = [
     image: null,
     description:
       "A simple webpage clone of Shopify built with html and Tailwind CSS",
-    live: null,
-    source: null,
+    live: "https://hosterator101.netlify.app/",
+    source: "https://github.com/MTouthang/bussiness-solution-website",
   },
   {
     id: 18,
@@ -199,8 +202,8 @@ export const projects = [
     image: null,
     description:
       "A simple webpage clone of Shopify built with html and Tailwind CSS",
-    live: null,
-    source: null,
+    live: "https://saas1010.netlify.app/",
+    source: "https://github.com/MTouthang/saas-web-application-demo",
   },
   {
     id: 19,
@@ -208,8 +211,8 @@ export const projects = [
     image: null,
     description:
       "A simple webpage clone of Shopify built with html and Tailwind CSS",
-    live: null,
-    source: null,
+    live: "https://vdesigner101.netlify.app/",
+    source: "https://github.com/MTouthang/visual-designer",
   },
 ];
 

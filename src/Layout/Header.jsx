@@ -79,22 +79,22 @@ const Header = () => {
                   Projects
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a
                   href="#reading"
                   className="hover:text-primary-textHightLight hover:underline underline-offset-4"
                 >
                   Readings
                 </a>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <a
                   href="#reading"
                   className="hover:text-primary-textHightLight hover:underline underline-offset-4"
                 >
                   blogs
                 </a>
-              </li>
+              </li> */}
             </ol>
             <div className="rounded bg-primary-textHightLight">
               <button className="px-4 py-1 transition ease-in-out border rounded hover:text-primary-textHightLight text-primary-default border-primary-textHightLight hover:-translate-y-1 hover:-translate-x-1 bg-primary-bg">
