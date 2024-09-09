@@ -3,6 +3,7 @@ import About from "./Component/About";
 import Contact from "./Component/Contact";
 import Experience from "./Component/Experience";
 import Project from "./Component/Project";
+import Reading from "./Component/Reading";
 // import Reading from "./Component/Reading";
 // import Works from "./Component/Works";
 import Layout from "./Layout/Layout";
@@ -18,7 +19,7 @@ const Home = () => {
         {/* <Works /> */}
 
         <Project />
-        {/* <Reading /> */}
+        <Reading />
         {/* <Blog /> */}
         <Contact />
       </Layout>
