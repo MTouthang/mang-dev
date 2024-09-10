@@ -221,20 +221,21 @@ export const readings = [
   {
     id: 1,
     name: "The Pragmatic programmer",
-    description: null,
-    author: null,
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Temporibus animi culpa corporis",
+    author: "Andy Hunt, Dave Thomas",
   },
   {
     id: 2,
     name: "Cracking the coding interview",
     description: null,
-    author: null,
+    author: "Gayle Laakmann McDowell",
   },
   {
     id: 3,
     name: "Data Structures and Algorithms with JavaScript",
     description: null,
-    author: null,
+    author: "Michael McMillan",
   },
   {
     id: 4,
@@ -270,7 +271,7 @@ export const readings = [
     id: 9,
     name: "Reactjs for Jobseekers",
     description: null,
-    author: "",
+    author: "Qaifi Khan",
   },
 ];
 

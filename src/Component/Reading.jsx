@@ -26,12 +26,10 @@ const Reading = () => {
               </div>
               <div className="p-1 text-[#D0D0D0]">
                 <h3 className="py-1 font-semibold"> {item.name} </h3>
-                {/* <p className="py-1 text-xs">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Temporibus animi culpa corporis
-              </p>
-              <p className="text-sm"> link1 </p>
-              <p className="text-sm"> link2</p> */}
+                <p className="py-1 text-xs">
+                  {item?.description?.slice(0, 50)}...
+                </p>
+                <p className="text-sm line-clamp-1"> Author:{item?.author}</p>
               </div>
             </div>
           );
