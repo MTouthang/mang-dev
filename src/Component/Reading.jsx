@@ -15,19 +15,21 @@ const Reading = () => {
           return (
             <div
               key={index}
-              className="rounded h-80 w-56 bg-[#262626] hover:bg-[#2c2c2c]"
+              className="rounded h-80 w-56 bg-[#262626] hover:bg-[#2c2c2c] group"
             >
-              <div className="w-full h-40 ">
+              <div className="w-full h-40 overflow-hidden">
                 <img
                   src={me}
                   alt="me"
-                  className="object-cover w-full h-full rounded-t-sm"
+                  className="object-cover w-full h-full transition rounded-t-sm group-hover:scale-125"
                 />
               </div>
-              <div className="p-1 text-[#D0D0D0]">
-                <h3 className="py-1 font-semibold"> {item.name} </h3>
-                <p className="py-1 text-xs">
-                  {item?.description?.slice(0, 50)}...
+              <div className="p-1 text-[rgb(208,208,208)] group-hover:text-primary-textHightLight">
+                <h3 className="py-1 mt-2 font-semibold line-clamp-1">
+                  {item.name}
+                </h3>
+                <p className="h-20 py-1 text-xs">
+                  {item?.description?.slice(0, 100)}...
                 </p>
                 <p className="text-sm line-clamp-1"> Author:{item?.author}</p>
               </div>
