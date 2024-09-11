@@ -222,55 +222,63 @@ export const readings = [
     id: 1,
     name: "The Pragmatic programmer",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Temporibus animi culpa corporis",
+      "This classic book offers practical advice for software developers, emphasizing best practices, methodologies, and the mindset needed to excel in the field. It covers a wide range of topics from code craftsmanship to project management.",
     author: "Andy Hunt, Dave Thomas",
   },
   {
     id: 2,
     name: "Cracking the coding interview",
-    description: null,
+    description:
+      "A comprehensive guide to preparing for technical interviews, this book provides 189 programming questions and solutions, along with detailed explanations and tips for succeeding in coding interviews",
     author: "Gayle Laakmann McDowell",
   },
   {
     id: 3,
-    name: "Data Structures and Algorithms with JavaScript",
-    description: null,
+    name: "DSA with JavaScript",
+    description:
+      "This book provides a practical approach to understanding and implementing data structures and algorithms using JavaScript. It includes clear explanations, examples, and exercises to help developers improve their problem-solving skills.",
     author: "Michael McMillan",
   },
   {
     id: 4,
     name: "Skill it",
-    description: null,
+    description:
+      "This book provides practical guidance on skill development and personal growth. Warikoo shares actionable insights and strategies to help readers enhance their abilities, set and achieve goals, and build a successful career. The book emphasizes the importance of continuous learning and adapting to change in the modern world.",
     author: "Ankur wariko",
   },
   {
     id: 5,
     name: "Do Epic Shit",
-    description: null,
+    description:
+      "This motivational book encourages readers to pursue their passions and achieve their dreams. It offers practical advice and personal stories to inspire readers to take bold actions and create a meaningful life.",
     author: "Ankur wariko",
   },
   {
     id: 6,
     name: "Show your work!",
-    description: null,
+    description:
+      "A guide to self-promotion and sharing your work, this book provides strategies for building an audience and gaining recognition. It emphasizes the importance of openness, creativity, and connecting with others.",
     author: "Austin Kleon",
   },
   {
     id: 7,
     name: "Building Scalable Web Apps with Node.js and Express",
-    description: null,
+    description:
+      "This book provides a practical guide to developing scalable and efficient web applications using Node.js and Express. It covers essential concepts, best practices, and architectural patterns to help developers build robust backend systems. The book includes hands-on examples and strategies for optimizing performance, handling large-scale data, and managing application complexity.",
     author: "Yamini Panchal, Ravi Kumar Gupta",
   },
   {
     id: 8,
     name: "Zero to One",
-    description: null,
+    description:
+      "Peter Thiel's book explores how to create and build innovative startups that go from zero to becoming market leaders. It focuses on the importance of unique ideas, technology, and strategic thinking in creating successful businesses.",
     author: "Peter Thield",
   },
   {
     id: 9,
     name: "Reactjs for Jobseekers",
-    description: null,
+    description:
+      "This book is designed to help job seekers master ReactJS, a popular JavaScript library for building user interfaces. It covers core concepts, practical examples, and advanced techniques to equip readers with the skills needed to excel in React-related job interviews and projects. The book focuses on practical applications, real-world scenarios, and strategies for showcasing React expertise in job applications and career advancement.",
     author: "Qaifi Khan",
   },
 ];
