@@ -1,4 +1,3 @@
-import me from "../../src/assets/projects-default.jpg";
 import { readings } from "../data/data";
 const Reading = () => {
   return (
@@ -19,7 +18,7 @@ const Reading = () => {
             >
               <div className="w-full h-40 overflow-hidden">
                 <img
-                  src={me}
+                  src={item.image}
                   alt="me"
                   className="object-cover w-full h-full transition rounded-t-sm group-hover:scale-125"
                 />
