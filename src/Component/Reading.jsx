@@ -2,7 +2,7 @@ import { readings } from "../data/data";
 const Reading = () => {
   return (
     // <!-- Projects -->
-    <section id="project" className="w-3/4 py-5 mx-auto md:py-5 ">
+    <section id="readings" className="w-3/4 py-5 mx-auto md:py-5 ">
       <div className="flex items-center justify-between gap-10 pb-10">
         <h2 className="w-full pl-3 text-2xl font-semibold text-primary-textHightLight">
           04. Readings

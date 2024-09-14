@@ -79,14 +79,14 @@ const Header = () => {
                   Projects
                 </a>
               </li>
-              {/* <li>
+              <li>
                 <a
-                  href="#reading"
+                  href="#readings"
                   className="hover:text-primary-textHightLight hover:underline underline-offset-4"
                 >
                   Readings
                 </a>
-              </li> */}
+              </li>
               {/* <li>
                 <a
                   href="#reading"
