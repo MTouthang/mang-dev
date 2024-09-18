@@ -1,5 +1,5 @@
 import Footer from "../Component/Footer";
-import Header from "./Header";
+import Header from "../Component/Header";
 
 // eslint-disable-next-line react/prop-types
 const Layout = ({ children }) => {
