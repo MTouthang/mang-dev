@@ -27,7 +27,7 @@ const ProjectModal = ({ data }) => {
             )}
           </div>
 
-          <p className="py-4 w-[480px]">{data?.description}</p>
+          <p className="py-4 w-72 md:w-[480px]">{data?.description}</p>
 
           {data?.live ? (
             <a

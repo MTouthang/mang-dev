@@ -25,7 +25,7 @@ const ReadingModal = ({ data }) => {
             />
           )}
 
-          <p className="py-4 w-[480px]">{data?.description}</p>
+          <p className="py-4 w-72 md:w-[480px]">{data?.description}</p>
 
           {data?.author && <p>By - {data.author}</p>}
         </div>
