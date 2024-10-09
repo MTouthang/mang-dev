@@ -1,10 +1,19 @@
 import { useState } from "react";
 import { readings } from "../data/data";
+import ReadingModal from "./ReadingModal";
 const Reading = () => {
   const [visibleCount, setVisibleCount] = useState(4);
   const [readingData, setReadingData] = useState(
     readings.slice(0, visibleCount)
   );
+
+  const [selectBook, setSelectedBook] = useState();
+
+  const selectedBook = (item) => {
+    document.getElementById("my_modal2").showModal();
+    setSelectedBook(item);
+    console.log(selectBook);
+  };
 
   const showMore = () => {
     const newEnd = visibleCount + 4;
@@ -27,6 +36,7 @@ const Reading = () => {
             <div
               key={index}
               className="rounded h-80 w-56 bg-[#262626] hover:bg-[#2c2c2c] group"
+              onClick={() => selectedBook(item)}
             >
               <div className="w-full h-40 overflow-hidden">
                 <img
@@ -48,6 +58,7 @@ const Reading = () => {
           );
         })}
       </div>
+      <ReadingModal data={selectBook} />
       {visibleCount < readings.length && (
         <p className="py-4 text-center" onClick={showMore}>
           Show more...
