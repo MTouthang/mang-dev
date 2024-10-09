@@ -23,7 +23,7 @@ const Reading = () => {
 
   return (
     // <!-- Projects -->
-    <section id="readings" className="w-3/4 py-5 mx-auto md:py-5 ">
+    <section id="readings" className="w-11/12 py-5 mx-auto md:w-3/4 md:py-5 ">
       <div className="flex items-center justify-between gap-10 pb-10">
         <h2 className="w-full pl-3 text-2xl font-semibold text-primary-textHightLight">
           04. Readings
@@ -35,24 +35,27 @@ const Reading = () => {
           return (
             <div
               key={index}
-              className="rounded h-80 w-56 bg-[#262626] hover:bg-[#2c2c2c] group"
+              className="rounded h-80 w-40 md:w-56 bg-[#262626] hover:bg-[#2c2c2c] group overflow-hidden"
               onClick={() => selectedBook(item)}
             >
               <div className="w-full h-40 overflow-hidden">
                 <img
                   src={item.image}
-                  alt="me"
+                  alt={item.name}
                   className="object-cover w-full h-full transition rounded-t-sm group-hover:scale-125"
                 />
               </div>
-              <div className="p-1 text-[rgb(208,208,208)] group-hover:text-primary-textHightLight">
-                <h3 className="py-1 mt-2 font-semibold line-clamp-1">
+              <div className="p-1 text-[rgb(208,208,208)] group-hover:text-primary-textHightLight o">
+                <h3 className="py-1 mt-2 font-semibold md:line-clamp-1 ">
                   {item.name}
                 </h3>
-                <p className="h-20 py-1 text-xs">
+                <p className="hidden h-20 py-1 text-xs md:block">
                   {item?.description?.slice(0, 100)}...
                 </p>
-                <p className="text-sm line-clamp-1"> Author:{item?.author}</p>
+                <p className="text-sm md:line-clamp-1">
+                  {" "}
+                  Author:{item?.author}
+                </p>
               </div>
             </div>
           );
