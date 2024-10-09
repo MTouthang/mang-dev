@@ -63,7 +63,7 @@ const Reading = () => {
       </div>
       <ReadingModal data={selectBook} />
       {visibleCount < readings.length && (
-        <p className="py-4 text-center" onClick={showMore}>
+        <p className="py-4 text-center cursor-pointer" onClick={showMore}>
           Show more...
         </p>
       )}
