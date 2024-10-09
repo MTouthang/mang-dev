@@ -54,7 +54,7 @@ const Header = () => {
 
           {/* <!-- nav menu items and button --> */}
           <div
-            className={` ${toggle ? "hidden" : "block"} z-40 bg-white/10 md:bg-transparent md:border-none backdrop-blur-sm  border-gray-200/20 transition ease-in-out absolute md:flex top-0 right-0 flex-col md:flex-row items-center h-screen md:h-fit gap-5 p-10 text-sm border  place-content-center md:items-start md:p-4 `}
+            className={` ${toggle ? "hidden" : "block"} z-40 bg-[#0E1217] md:bg-transparent md:border-none transition ease-in-out absolute md:flex top-0 right-0 flex-col md:flex-row items-center h-[120vh] gap-6 p-10 text-sm  place-content-center md:items-start md:p-4 `}
           >
             <ol className={` gap-6 text-primary-default md:flex`}>
               <li>
