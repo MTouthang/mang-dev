@@ -7,7 +7,7 @@ const HeroSection = () => {
         {/* <!-- hero main body --> */}
         <div className="w-full px-3 mx-auto md:px-2 md:w-2/3">
           <p className="font-mono font-medium text-primary-textDimmed">
-            Hi, my name is
+            👋 Hi, my name is
           </p>
           <h1 className="font-extrabold leading-[65px] text-5xl font-sans text-primary-textLight">
             Ngamlenmang Touthang

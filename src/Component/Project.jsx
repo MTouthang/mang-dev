@@ -1,7 +1,15 @@
+import { useState } from "react";
 import projectImage from "../assets/projects-default.jpg";
 import { projects } from "../data/data";
-import Modal from "./Modal";
+import Modal from "./ProjectModal";
 const Project = () => {
+  const [selectedItem, setSelectedItem] = useState();
+
+  const itemOnClick = (item) => {
+    document.getElementById("my_modal").showModal();
+    setSelectedItem(item);
+  };
+
   return (
     // <!-- Projects -->
     <section id="project" className="w-3/4 py-5 mx-auto md:py-5">
@@ -16,11 +24,11 @@ const Project = () => {
           return (
             <>
               <div
-                className="btn rounded h-80 w-56 bg-[#262626] hover:bg-[#2c2c2c] group cursor-pointer"
+                className="btn rounded h-80 w-56 bg-[#262626] hover:bg-[#2c2c2c] group cursor-pointer text-left"
                 key={index}
-                onClick={() => document.getElementById("my_modal").showModal()}
+                onClick={() => itemOnClick(item)}
               >
-                <div className="w-full h-40 overflow-hidden border-red-400">
+                <div className="w-full h-40 overflow-hidden text-left border-red-400">
                   <img
                     src={item.image ? item.image : projectImage}
                     alt={item.title}
@@ -60,11 +68,11 @@ const Project = () => {
                   )}
                 </div>
               </div>
-              <Modal />
             </>
           );
         })}
       </div>
+      <Modal data={selectedItem} />
       {/* <div className="hover:bg-[#64FFDA] w-44 rounded mx-auto my-10">
         <button className="px-10 py-3 border-2 rounded text-[#64FFDA] border-[#64FFDA] hover:-translate-y-1 hover:-translate-x-1 bg-[#0A192F] transition ease-in-out w-44 font-mono">
           Show more
