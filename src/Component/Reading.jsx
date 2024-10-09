@@ -1,5 +1,17 @@
+import { useState } from "react";
 import { readings } from "../data/data";
 const Reading = () => {
+  const [visibleCount, setVisibleCount] = useState(4);
+  const [readingData, setReadingData] = useState(
+    readings.slice(0, visibleCount)
+  );
+
+  const showMore = () => {
+    const newEnd = visibleCount + 4;
+    setVisibleCount(newEnd);
+    setReadingData(readings.slice(0, newEnd));
+  };
+
   return (
     // <!-- Projects -->
     <section id="readings" className="w-3/4 py-5 mx-auto md:py-5 ">
@@ -10,7 +22,7 @@ const Reading = () => {
         <div className="w-20 md:w-60 h-[0.5px] bg-primary-textHightLight mr-4"></div>
       </div>
       <div className="flex flex-wrap justify-center gap-2">
-        {readings.map((item, index) => {
+        {readingData.map((item, index) => {
           return (
             <div
               key={index}
@@ -36,11 +48,11 @@ const Reading = () => {
           );
         })}
       </div>
-      {/* <div className="hover:bg-[#64FFDA] w-44 rounded mx-auto my-10">
-        <button className="px-10 py-3 border-2 rounded text-[#64FFDA] border-[#64FFDA] hover:-translate-y-1 hover:-translate-x-1 bg-[#0A192F] transition ease-in-out w-44 font-mono">
-          Show more
-        </button>
-      </div> */}
+      {visibleCount < readings.length && (
+        <p className="py-4 text-center" onClick={showMore}>
+          Show more...
+        </p>
+      )}
     </section>
   );
 };

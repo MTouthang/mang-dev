@@ -19,8 +19,6 @@ const Project = () => {
     const newEnd = visibleCount + 4;
     setVisibleCount(newEnd);
     setProjectData(projects.slice(0, newEnd));
-
-    console.log(projectData);
   };
 
   return (

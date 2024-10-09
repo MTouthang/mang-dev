@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import defaultImage from "../assets/projects-default.jpg";
-const ProjectModal = ({ data }) => {
+const ReadingModal = ({ data }) => {
   console.log(data);
   return (
     <>
@@ -58,4 +58,4 @@ const ProjectModal = ({ data }) => {
   );
 };
 
-export default ProjectModal;
+export default ReadingModal;
