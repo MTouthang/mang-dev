@@ -5,9 +5,22 @@ import Modal from "./ProjectModal";
 const Project = () => {
   const [selectedItem, setSelectedItem] = useState();
 
+  const [visibleCount, setVisibleCount] = useState(4);
+  const [projectData, setProjectData] = useState(
+    projects.slice(0, visibleCount)
+  );
+
   const itemOnClick = (item) => {
     document.getElementById("my_modal").showModal();
     setSelectedItem(item);
+  };
+
+  const showMore = () => {
+    const newEnd = visibleCount + 4;
+    setVisibleCount(newEnd);
+    setProjectData(projects.slice(0, newEnd));
+
+    console.log(projectData);
   };
 
   return (
@@ -20,7 +33,7 @@ const Project = () => {
         <div className="w-20 md:w-60 h-[0.5px] bg-primary-textHightLight mr-4"></div>
       </div>
       <div className="flex flex-wrap justify-center gap-2">
-        {projects.map((item, index) => {
+        {projectData.map((item, index) => {
           return (
             <>
               <div
@@ -73,11 +86,11 @@ const Project = () => {
         })}
       </div>
       <Modal data={selectedItem} />
-      {/* <div className="hover:bg-[#64FFDA] w-44 rounded mx-auto my-10">
-        <button className="px-10 py-3 border-2 rounded text-[#64FFDA] border-[#64FFDA] hover:-translate-y-1 hover:-translate-x-1 bg-[#0A192F] transition ease-in-out w-44 font-mono">
-          Show more
-        </button>
-      </div> */}
+      {visibleCount < projects.length && (
+        <p className="py-4 text-center" onClick={showMore}>
+          Show more...
+        </p>
+      )}
     </section>
   );
 };
