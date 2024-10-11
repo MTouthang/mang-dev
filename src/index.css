@@ -5,10 +5,10 @@
 @tailwind utilities;
 
 
-
 html {
-    background-color: #0E1217;
+    
     scroll-behavior: smooth;
+    background-color: #0E1217;
 }
 
 body {
@@ -67,7 +67,7 @@ body {
       border-right: 2px solid; /* Simulate a cursor */
       width: 0; /* Start at 0 width */
       display: inline-block; /* Ensure the element behaves like text */
-      animation: typing 8s steps(28, end) infinite alternate, blink-caret 0.75s step-end infinite;
+      animation: typing 8s steps(28, end) infinite alternate, blink-caret 0.75s step-end infinite; 
     }
     
     @keyframes typing {

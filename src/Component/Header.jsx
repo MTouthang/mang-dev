@@ -39,7 +39,7 @@ const Header = () => {
       <header
         className={`sticky top-0 z-40 w-full px-10 py-5 ${
           scrollDirection === "down" ? "-translate-y-full" : "translate-y-0"
-        } backdrop-blur-sm transition ease-in shadow-lg`}
+        } backdrop-blur-sm transition ease-in shadow-lg `}
       >
         <nav className="flex items-center justify-between text-primary-default">
           {/* <!-- nav logo --> */}
