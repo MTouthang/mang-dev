@@ -17,6 +17,9 @@ export default {
           textDimmed: "#898B8D",
         },
       },
+      cursor: {
+        shake: 'url("./src/assets/groundhog.png"), auto',
+      },
       listStyleImage: {
         triangle: 'url("./src/assets/list-icon.png")',
       },
