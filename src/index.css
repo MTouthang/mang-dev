@@ -51,8 +51,8 @@ body {
     
     @keyframes typing {
       0% { width: 0; }
-      50% { width: 92%; } 
-      100% { width: 92%; } 
+      50% { width: 78%; } 
+      100% { width: 78%; } 
     }
     
     @keyframes blink-caret {
