@@ -17,11 +17,10 @@ const HeroSection = () => {
             I build things for the Web.
           </h1>
           <p className="py-8 text-md text-primary-default">
-            I am an Associate (Full Stack Developer) at Physics Wallah,
-            specializing in creating web applications. I develop content,
-            documentation, and web projects for enthusiasts interested in
-            building web applications from scratch, focusing on both frontend
-            and backend development.
+            Full Stack Developer skilled in React, TypeScript, Node.js, and
+            MongoDB, with experience building web applications and creating
+            content for full-stack learning programs, including projects and LMS
+            integration for a smooth user experience.
           </p>
           <div className="w-56 rounded hover:bg-primary-textHightLight">
             <a href={resume} target="blank">
