@@ -5,7 +5,7 @@ const Footer = () => {
         <p className="text-[#ccd6f6]">
           Built with 💜 by Ngamlenmang Touthang (Mang)
         </p>
-        <p className="text-[#8892b0]">© 2024</p>
+        <p className="text-[#8892b0]">© 2025</p>
       </div>
     </section>
   );

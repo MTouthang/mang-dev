@@ -35,7 +35,7 @@ const Project = () => {
           return (
             <>
               <div
-                className="btn rounded h-80 w-40 md:w-56 bg-[#262626] hover:bg-[#2c2c2c] group cursor-pointer text-left"
+                className="btn rounded h-80 w-60 md:w-56 bg-[#262626] hover:bg-[#2c2c2c] group cursor-pointer text-left"
                 key={index}
                 onClick={() => itemOnClick(item)}
               >
