@@ -30,59 +30,59 @@ const Project = () => {
         </h2>
         <div className="w-20 md:w-60 h-[0.5px] bg-primary-textHightLight mr-4"></div>
       </div>
-      <div className="flex flex-wrap justify-center gap-2">
-        {projectData.map((item, index) => {
-          return (
-            <>
-              <div
-                className="btn rounded h-80 w-60 md:w-56 bg-[#262626] hover:bg-[#2c2c2c] group cursor-pointer text-left"
-                key={index}
-                onClick={() => itemOnClick(item)}
-              >
-                <div className="w-full h-40 overflow-hidden text-left">
-                  <img
-                    src={item.image ? item.image : projectImage}
-                    alt={item.title}
-                    className="object-cover w-full h-full transition rounded-t-sm group-hover:scale-125"
-                  />
-                </div>
-                <div className="md:p-1 text-[#D0D0D0] group-hover:text-primary-textHightLight w-full">
-                  <h3 className="py-2 font-semibold md:line-clamp-1">
-                    {item.title}
-                  </h3>
-                  <p className="hidden py-1 text-xs md:block">
-                    {item?.description?.slice(0, 95)}
-                    {item.description ? "..." : ""}
-                  </p>
-                  {item.live ? (
-                    <a
-                      className="mr-5 text-sm transition hover:underline"
-                      href={item.live}
-                      target="__blank"
-                    >
-                      Live
-                    </a>
-                  ) : (
-                    ""
-                  )}
 
-                  {item.source ? (
-                    <a
-                      className="text-sm transition hover:underline"
-                      href={item.source}
-                      target="__blank"
-                    >
-                      Code
-                    </a>
-                  ) : (
-                    ""
-                  )}
-                </div>
+      <div className="flex flex-wrap justify-center gap-2">
+        {projectData.map((item, index) => (
+          <div
+            key={index}
+            className="flex flex-col justify-between rounded h-80 w-60 md:w-56 bg-[#262626] hover:bg-[#2c2c2c] group cursor-pointer text-left border hover:border-primary-textHightLight overflow-hidden"
+            onClick={() => itemOnClick(item)}
+          >
+            {/* Image Section */}
+            <div className="w-full overflow-hidden h-1/2">
+              <img
+                src={item.image || projectImage}
+                alt={item.title}
+                className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
+              />
+            </div>
+
+            {/* Description Section */}
+            <div className="flex flex-col justify-between p-2 text-[#D0D0D0] group-hover:text-primary-textHightLight h-1/2">
+              <h3 className="text-sm font-semibold line-clamp-1">
+                {item.title}
+              </h3>
+              <p className="hidden text-xs md:block">
+                {item?.description?.slice(0, 95)}
+                {item.description ? "..." : ""}
+              </p>
+              <div className="flex items-center gap-4 mt-auto">
+                {item.live && (
+                  <a
+                    className="text-sm transition hover:underline"
+                    href={item.live}
+                    target="__blank"
+                    onClick={(e) => e.stopPropagation()} // prevent onClick bubbling
+                  >
+                    Live
+                  </a>
+                )}
+                {item.source && (
+                  <a
+                    className="text-sm transition hover:underline"
+                    href={item.source}
+                    target="__blank"
+                    onClick={(e) => e.stopPropagation()} // prevent onClick bubbling
+                  >
+                    Code
+                  </a>
+                )}
               </div>
-            </>
-          );
-        })}
+            </div>
+          </div>
+        ))}
       </div>
+
       <Modal data={selectedItem} />
       {visibleCount < projects.length && (
         <p className="py-4 text-center cursor-pointer" onClick={showMore}>
