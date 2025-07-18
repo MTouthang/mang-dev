@@ -13,8 +13,8 @@ const HeroSection = () => {
           <h1 className="font-extrabold leading-[65px] text-5xl font-sans text-primary-textLight">
             Ngamlenmang Touthang
           </h1>
-          <h1 className="text-3xl font-semibold lg:text-4xl md:text-3xl text-primary-textHightLight typing">
-            I build things for the Web.
+          <h1 className="text-xl font-semibold lg:text-3xl md:text-3xl text-primary-textHightLight typing">
+            Tech-savvy problem solver.......
           </h1>
           <p className="py-8 text-md text-primary-default">
             Full Stack Developer skilled in React, TypeScript, Node.js, and
