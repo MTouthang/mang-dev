@@ -35,7 +35,7 @@ const Project = () => {
         {projectData.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col justify-between rounded h-80 w-60 md:w-56 bg-[#262626] hover:bg-[#2c2c2c] group cursor-pointer text-left border hover:border-primary-textHightLight overflow-hidden"
+            className="flex flex-col justify-between rounded h-80 w-60 md:w-56 bg-[#262626] hover:bg-[#2c2c2c] group cursor-pointer text-left hover:border hover:border-primary-textHightLight overflow-hidden"
             onClick={() => itemOnClick(item)}
           >
             {/* Image Section */}

@@ -35,7 +35,7 @@ const Reading = () => {
           return (
             <div
               key={index}
-              className="rounded h-80 w-40 md:w-56 bg-[#262626] hover:bg-[#2c2c2c] group overflow-hidden"
+              className="rounded h-80 w-40 md:w-56 bg-[#262626] hover:bg-[#2c2c2c] group overflow-hidden hover:border hover:border-primary-textHightLight"
               onClick={() => selectedBook(item)}
             >
               <div className="w-full h-40 overflow-hidden">
